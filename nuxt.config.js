@@ -15,7 +15,6 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
 
@@ -64,5 +63,9 @@ module.exports = {
     extend(config, ctx) {
       
     }
+  },
+  server: {
+    port: 1125, // default: 3000
+    host: 'localhost', // default: localhost
   }
 }
