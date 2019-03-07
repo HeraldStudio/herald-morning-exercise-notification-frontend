@@ -23,7 +23,7 @@ module.exports = {
   loading: { color: '#fff' },
   build: {
     publicPath: 'https://myseu.cn/morningExerciseNotification/'
-  }
+  },
 
   /*
   ** Global CSS
