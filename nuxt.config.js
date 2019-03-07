@@ -54,7 +54,7 @@ module.exports = {
   */
   build: {
     transpile: [/^element-ui/],
-    publicPath: 'https://myseu.cn/morningExerciseNotification/',
+    publicPath: 'https://myseu.cn/morningExerciseNotification/_nuxt/',
     /*
     ** You can extend webpack config here
     */
