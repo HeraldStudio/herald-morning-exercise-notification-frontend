@@ -21,10 +21,6 @@ module.exports = {
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
-  build: {
-    publicPath: 'https://myseu.cn/morningExerciseNotification/'
-  },
-
   /*
   ** Global CSS
   */
@@ -58,7 +54,7 @@ module.exports = {
   */
   build: {
     transpile: [/^element-ui/],
-    
+    publicPath: 'https://myseu.cn/morningExerciseNotification/',
     /*
     ** You can extend webpack config here
     */
