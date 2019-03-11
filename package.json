@@ -1,22 +1,29 @@
 {
   "name": "herald-morning-exercise-notification-frontend",
-  "version": "1.0.0",
-  "description": "跑操提醒设置前端页面",
-  "author": "Wolf-Tungsten",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
   "dependencies": {
-    "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0",
-    "element-ui": "^2.4.11",
-    "@nuxtjs/axios": "^5.3.6"
+    "axios": "^0.18.0",
+    "element-react": "^1.4.33",
+    "element-theme-default": "^1.4.13",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-hot-loader": "^4.8.0",
+    "react-scripts": "2.1.8"
   },
-  "devDependencies": {
-    "nodemon": "^1.18.9"
-  }
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

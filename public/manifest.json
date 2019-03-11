@@ -1,0 +1,10 @@
+{
+  "short_name": "跑操提醒",
+  "name": "跑操提醒设置",
+  "icons": [
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
