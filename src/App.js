@@ -33,7 +33,7 @@ class Content extends Component{
     MessageBox.confirm(`将通知所有用户${state==='set'?'【跑操正常进行】':'【跑操取消】'}, 是否继续?`, '提示', {
       type: 'warning'
     }).then(async () => {
-      this.setState({loading:true, loadingText:'正在推送中，请勿刷新页面'})
+      this.setState({loading:true, loadingText:'正在推送中，推送完成前【请勿刷新页面】！'})
       let res = await axios.post('https://myseu.cn/ws3/api/pe/morningExerciseNotification',{sessionKey:this.props.match.params.sessionKey, state})
       this.setState({loading:false, serverState:state})
       Message({
