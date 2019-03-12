@@ -34,12 +34,21 @@ class Content extends Component{
       type: 'warning'
     }).then(async () => {
       this.setState({loading:true, loadingText:'正在推送中，推送完成前【请勿刷新页面】！'})
-      let res = await axios.post('https://myseu.cn/ws3/api/pe/morningExerciseNotification',{sessionKey:this.props.match.params.sessionKey, state})
-      this.setState({loading:false, serverState:state})
-      Message({
-        type: res.data.success?'success':'warning',
-        message:res.data.success?res.data.result:res.data.reason,
-      });
+      try{
+        let res = await axios.post('https://myseu.cn/ws3/api/pe/morningExerciseNotification',{sessionKey:this.props.match.params.sessionKey, state}, {timeout:0})
+        this.setState({loading:false, serverState:state})
+        Message({
+          type: res.data.success?'success':'warning',
+          message:res.data.success?res.data.result:res.data.reason,
+        });
+      } catch(e) {
+        this.setState({loading:false})
+        Message({
+          type: 'warning',
+          message:e.message,
+        });
+      }
+      
     }).catch(() => {
     });
   }
