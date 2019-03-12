@@ -2,6 +2,7 @@
   "name": "herald-morning-exercise-notification-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://myseu.cn/morningExerciseNotification/",
   "dependencies": {
     "axios": "^0.18.0",
     "element-react": "^1.4.33",

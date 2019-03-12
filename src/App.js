@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 import { Layout, Button, Loading, Message, MessageBox } from 'element-react'
-import { BrowserRouter, Route} from 'react-router-dom'
+import { BrowserRouter, Route, HashRouter} from 'react-router-dom'
 import 'element-theme-default';
 class Content extends Component{
 
@@ -93,11 +93,11 @@ class App extends Component {
     
 
     return (
-      <BrowserRouter>
+      <HashRouter>
         <div>
           <Route path="/:sessionKey" component={Content} />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
